@@ -3,4 +3,6 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 # testing environment
-testing github pull/push/commit and so on
+1) read in production capacities from excel file.
+2) validate the data. 
+3) optimize the production.
