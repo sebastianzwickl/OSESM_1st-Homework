@@ -8,4 +8,4 @@ from function import add
 
 
 def test_add():
-    assert(2, 1) == 3
+    assert add(2, 1) == 3
