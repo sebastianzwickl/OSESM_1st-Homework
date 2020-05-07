@@ -10,9 +10,27 @@ def add(a, b):
     return a + b
 
 
-def validate(cap, demand):
-    capacities = sum(sum(cap.values))
-    if capacities >= sum(demand.values):
-        return True
+def validate(cap, d):
+    if type(cap) == int and type(d) == int:
+        capacities = cap
+        demand = d
     else:
-        return False
+        capacities = sum(sum(cap.values))
+        demand = sum(d.values)
+    if capacities >= demand:
+        return 1
+    else:
+        return 0
+
+
+def only_renewable(cap, d):
+    if type(cap) == int and type(d) == int:
+        if cap > d:
+            return 1
+        else:
+            return 0
+    else:
+        if cap['wind'][0] >= d.values:
+            return 1
+        else:
+            return 0
