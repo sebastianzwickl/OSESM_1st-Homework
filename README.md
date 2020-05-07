@@ -5,8 +5,10 @@
 # testing environment
 
 Description of files:
-
-- data.xlsx
+- data.xlsx: input data for marginal costs, intermittent supply and demand 
+- function.py: contains functions (e.g. validate, only_renewable)
+- optimization_file.py: linear program (LP) 
+- test_function.py: checks the functions in function.py
 
 
 
