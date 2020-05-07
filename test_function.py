@@ -13,4 +13,4 @@ def test_add():
 
 
 def test_validate():
-    assert validate(50, 20) == True
+    assert validate(50, 20) == 1

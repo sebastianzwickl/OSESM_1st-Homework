@@ -13,6 +13,6 @@ def add(a, b):
 def validate(cap, demand):
     capacities = sum(sum(cap.values))
     if capacities >= sum(demand.values):
-        return True
+        return 1
     else:
-        return False
+        return 0
