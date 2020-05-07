@@ -8,3 +8,11 @@ Created on Wed May  6 09:32:28 2020
 
 def add(a, b):
     return a + b
+
+
+def validate(cap, demand):
+    capacities = sum(sum(cap.values))
+    if capacities >= sum(demand.values):
+        return True
+    else:
+        return False
