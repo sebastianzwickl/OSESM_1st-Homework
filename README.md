@@ -2,7 +2,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-# easy linear program (LP) for the supply of the electricity demand
+# easy linear program (LP) 
+
+LP for the supply of the electricity demand. 
+available technologies (wind, nuclear, coal, gas)
 
 Approach of the program 
 1) read in data from excel file data.xlsx
