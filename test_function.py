@@ -6,7 +6,6 @@ Created on Wed May  6 09:33:25 2020
 """
 from function import add
 from function import validate
-import pandas as pd
 
 
 def test_add():
