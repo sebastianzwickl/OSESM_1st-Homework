@@ -17,3 +17,11 @@ Description of files:
 - function.py: contains functions (e.g. validate, only_renewable)
 - optimization_file.py: linear program (LP) 
 - test_function.py: checks the functions in function.py
+
+Description of functions:
+- cost_rule: objective function, minimize costs of supply
+- demand_rule: supply must be equal or greater than demand
+- cap_rule: upper bound for capacities
+
+- validate: check the input data. result: solvable or not
+- only_renewable: checks whether only wind can supply the demand
