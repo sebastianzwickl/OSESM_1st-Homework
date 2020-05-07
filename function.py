@@ -16,10 +16,3 @@ def validate(cap, demand):
         return True
     else:
         return False
-
-
-
-    
-
-
-
