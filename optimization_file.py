@@ -8,6 +8,7 @@ Created on Wed May  6 15:00:18 2020
 import pandas as pd
 import pyomo.environ as py
 from function import validate
+from function import only_renewable
 
 
 def cost_rule(m):
@@ -33,7 +34,7 @@ mc.reset_index(drop=True)
 demand = pd.read_excel('data.xlsx', 'demand')
 inter = pd.read_excel('data.xlsx', 'intermittent')
 
-if validate(inter, demand):
+if validate(inter, demand) and not(only_renewable(inter, demand)):
     model = py.ConcreteModel()
     model.frame = mc
     model.demand = demand.values[0]
@@ -58,3 +59,6 @@ if validate(inter, demand):
     opt.solve(model)
     for i in indexlist:
         print(i, ':', model.x[i].value)
+else:
+    print('No Optimization because enough Renewables')
+    print('Wind: 100')
