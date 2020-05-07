@@ -14,8 +14,7 @@ def test_add():
 
 def test_validate():
     assert validate(20, 2) == 1
-    
+
 
 def only_renewable():
     assert only_renewable(100, 100) == 1
-
