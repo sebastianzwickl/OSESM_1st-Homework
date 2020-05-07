@@ -22,6 +22,5 @@ Description of functions:
 - cost_rule: objective function, minimize costs of supply
 - demand_rule: supply must be equal or greater than demand
 - cap_rule: upper bound for capacities
-
 - validate: check the input data. result: solvable or not
 - only_renewable: checks whether only wind can supply the demand
