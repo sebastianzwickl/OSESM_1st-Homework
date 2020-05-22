@@ -4,8 +4,7 @@ Created on Wed May  6 09:33:25 2020
 
 @author: zwickl-nb
 """
-from function import add
-from function import validate
+from function import add, validate
 
 
 def test_add():
@@ -13,7 +12,7 @@ def test_add():
 
 
 def test_validate():
-    assert validate(20,2) == 2
+    assert validate(20, 2) == 1
 
 
 def only_renewable():
