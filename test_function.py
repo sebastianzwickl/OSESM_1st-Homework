@@ -13,7 +13,7 @@ def test_add():
 
 
 def test_validate():
-    assert validate(20, 2) == 1
+    assert validate(20,2) == 2
 
 
 def only_renewable():
