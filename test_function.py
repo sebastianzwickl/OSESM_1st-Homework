@@ -4,8 +4,7 @@ Created on Wed May  6 09:33:25 2020
 
 @author: zwickl-nb
 """
-from function import add
-from function import validate
+from function import add, validate
 
 
 def test_add():
